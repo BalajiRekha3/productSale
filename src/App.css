@@ -1,0 +1,46 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.preact:hover {
+  filter: drop-shadow(0 0 2em #673ab8aa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.myClass{
+  padding-left: 10px;
+  color: maroon;
+  background-color: grey;
+  border:  solid 2px black;
+  text-align: justify;
+  width: 200px;
+  margin-left: 10px;
+  
+}
+
+.div{
+  background-color: rgb(14, 5, 117);
+  border: 2px solid black;
+  text-align: center;
+  margin-left: 50px;
+}
+
+
+
+
