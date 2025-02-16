@@ -12,7 +12,7 @@ function LoginComponent() {
     const navigate = useNavigate();
 
     const loginCheck = (e) => {
-        e.preventDefault(); // Prevent page reload
+        e.preventDefault();
 
         if (!username || !password) {
             alert("Please fill in both fields.");
@@ -21,6 +21,7 @@ function LoginComponent() {
 
         if (username === "balaji" && password === "Balaji@123") {
             dispatch(login(username));
+            alert("Login successful!");
             navigate("/Home");
         } else {
             alert("Your credentials are wrong. Please check again.");
@@ -35,8 +36,6 @@ function LoginComponent() {
                         <Card.Body>
                             <h2 className="text-center mb-4">Login User</h2><hr />
                             <Form onSubmit={loginCheck}>
-                                
-                                {/* Username Field (Label & Input Side by Side) */}
                                 <Form.Group className="mb-3 d-flex align-items-center">
                                     <Form.Label className="mb-0 me-3" style={{ width: "150px" }}>User Name:</Form.Label>
                                     <Form.Control
@@ -46,8 +45,6 @@ function LoginComponent() {
                                         placeholder="Enter username"
                                     />
                                 </Form.Group>
-
-                                {/* Password Field (Label & Input Side by Side) */}
                                 <Form.Group className="mb-3 d-flex align-items-center">
                                     <Form.Label className="mb-0 me-3" style={{ width: "150px" }}>Password:</Form.Label>
                                     <Form.Control
@@ -57,7 +54,6 @@ function LoginComponent() {
                                         placeholder="Enter password"
                                     />
                                 </Form.Group>
-
                                 <Button type="submit" variant="primary" className="w-100">Login</Button>
                             </Form>
                         </Card.Body>
